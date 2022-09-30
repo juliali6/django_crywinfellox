@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color:rgb(0, 0, 0);
+    }
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}    
+
+h1,h2,h3,h4,h5,h6 {
+    margin:0;
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Intro */
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+
+    background-image: url('/static/css/store-g894334ca7_1920.jpg')
+    center
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover; 
+}
+
+ 
+.intro__inner {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+
+}
+
+
+.intro__title {
+    font-size: 300px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1;
+    color: #ffffff;
+}
+
+
+
+/* Header */
+
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+
+}
+
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color:rgb(255, 255, 255);
+
+} 
+
+
+/* Navigation */
+
+.nav {
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color .1s linear;
+    position: relative;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    opacity: 0;
+    background:#00c8c8;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+}
+
+.nav__link:hover {
+    color: #00c8c8;
+}
+
+.nav__link:hover:after {
+    display: block;
+    opacity: 1;
+
+    transition: opacity .1s linear;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #ffffff;
+
+    color:#ffffff;
+    text-transform: uppercase;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-align: left;
+    transition: background .1s linear, color .1s linear; 
+}
+
+
+.btn:hover {
+    color: #00c8c8;
+    background: #ffffff;
+
+}
+
+
+
+
+@font-face {
+    font-family: "Montserrat"; 
+    src: url("C:/QA/bsuir/apps/store/home/static/css/Montserrat-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/*
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+*/
+
+
+
+/* Cards */
+
+.product-wrapper {
+	display: block;
+	width: 100%;
+	float: left;
+	transition: width .2s;
+	border: 0px solid #00c8c8;
+	border-radius: 3px;
+	position: relative;
+	background: #00c8c8;
+	margin: 0 24px 24px 0;
+
+	color: #ffffff;
+	z-index: 0;
+	height: auto;
+}
+
+.product__text {
+    padding: 8px;
+}
+
+
+@media only screen and (min-width: 450px) {
+	.product-wrapper {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.product-wrapper {
+		width: 33.333%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.product-wrapper {
+		width: 25%;
+	}
+}
+
+
+
+
+.products {
+	list-style: none;
+	margin: 8px -24px 8px 8px;
+	padding: 8px;
+
+}
+
+/* Product photo*/
+
+.product-photo {
+	position: relative;
+	padding-bottom: 50%;
+	overflow: hidden;
+
+}
+
+.product-photo img {
+
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: 0px 0px 0px 0px;
+	max-width: 100%;
+	max-height: 100%;
+	transition: transform .4s ease-out;
+}
+
+
+
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 8px;
+	margin: 16px;
+    border: 3px solid #ffffff;
+
+    color:#ffffff;
+    text-transform: uppercase;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-align: left;
+    transition: background .1s linear, color .1s linear;
+}
+
+
+.btn:hover {
+    color: #00c8c8;
+    background: #ffffff;
+
+}
+
+
+.price {
+	display: inline-block;
+    padding-left: 150px;
+    margin-bottom: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 8px;
+}
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("C:/QA/bsuir/web_site/webstore/main/templates/main/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style_home.css'%}">
+
+    <title>webstore</title>
+        <style>
+       
+
+
+        </style>
+</head>
+<body>
+
+<!--                                NAVIGATION                                        -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div href="{% url 'home' %}"  class="header__logo">webstore</div>
+
+                <nav class="nav">
+                    <a class ="nav__link" href="">Information</a>
+                    <a class ="nav__link" href="#">About us</a>
+                    <a class ="nav__link" href="#">Service</a>
+                    <a class ="nav__link" href="#">Support</a>
+                    <a class ="nav__link" href="/catalog">Catalog</a>
+                </nav>
+
+            </div>
+        </div>
+
+<!--                                HEADER                                        -->
+
+    </header>
+    <div class="intro" style="background-image: url({% static 'img/store-g894334ca7_1920.jpg' %})">
+
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">W  S</h1>
+                <a href="{% url 'register' %}" class="btn intro__title " style="align:center">REGISTER</a>
+                <a href="{% url 'login' %}" class="btn intro__title " style="align:center">LOGIN</a>
+            </div>
+        </div>
+    </div>
+
+
+
+<!--                                PRODUCTS                                        -->
+
+<div class="container">
+    <ul class="products clearfix">
+        <li class="product-wrapper">
+            <a href="" class="product"></a>
+
+
+            <div class="product-photo">
+                <img src="{% static 'img/pic1.jpg'%}" alt="Oleg">
+            </div>
+
+
+            <div class="product__text">
+                <p class="product__text__title">How Digital Workers Put AI to Work</p>
+                <p class="product__text__description">Read how WorkFusion's Digital Workers can provide efficient path for positive business outcomes, with better customer / employee experience and compliance.</p>
+                <p class="category-list__price">February 2, 2022 6 min read</p>
+            </div>
+
+            <a href="#" class="btn">Buy</a> <p class="price">Price</p>
+
+
+
+        </li>
+        <li class="product-wrapper">
+            <a href="" class="product"></a>
+
+
+                <div class="product-photo">
+                    <img src="{% static 'img/pic1.jpg'%}" alt="Oleg">
+                </div>
+
+
+                <div class="product__text">
+                    <p class="product__text__title">How Digital Workers Put AI to Work</p>
+                    <p class="product__text__description">Read how WorkFusion's Digital Workers can provide efficient path for positive business outcomes, with better customer / employee experience and compliance.</p>
+                    <p class="category-list__price">February 2, 2022 6 min read</p>
+                </div>
+
+                <a href="#" class="btn">Buy</a> <p class="price">Price</p>
+
+
+
+
+        </li>
+        <li class="product-wrapper">
+            <a href="" class="product"></a>
+
+
+                <div class="product-photo">
+                    <img src="{% static 'img/pic1.jpg'%}" alt="Oleg">
+                </div>
+
+
+                <div class="product__text">
+                    <p class="product__text__title">How Digital Workers Put AI to Work</p>
+                    <p class="product__text__description">Read how WorkFusion's Digital Workers can provide efficient path for positive business outcomes, with better customer / employee experience and compliance.</p>
+                    <p class="category-list__price">February 2, 2022 6 min read</p>
+                </div>
+
+                <a href="#" class="btn">Buy</a> <p class="price">Price</p>
+
+
+
+
+        </li>
+        <li class="product-wrapper">
+            <a href="" class="product"></a>
+
+
+                <div class="product-photo">
+                    <img src="{% static 'img/pic1.jpg'%}" alt="Oleg">
+                </div>
+
+
+                <div class="product__text">
+                    <p class="product__text__title">How Digital Workers Put AI to Work</p>
+                    <p class="product__text__description">Read how WorkFusion's Digital Workers can provide efficient path for positive business outcomes, with better customer / employee experience and compliance.</p>
+                    <p class="category-list__price">February 2, 2022 6 min read</p>
+                </div>
+
+                <a href="#" class="btn">Buy</a> <p class="price">Price</p>
+
+
+
+        </li>
+        <li class="product-wrapper">
+            <a href="" class="product"></a>
+
+
+                <div class="product-photo">
+                    <img src="{% static 'img/pic1.jpg'%}" alt="Oleg">
+                </div>
+
+
+                <div class="product__text">
+                    <p class="product__text__title">How Digital Workers Put AI to Work</p>
+                    <p class="product__text__description">Read how WorkFusion's Digital Workers can provide efficient path for positive business outcomes, with better customer / employee experience and compliance.</p>
+                    <p class="category-list__price">February 2, 2022 6 min read</p>
+                </div>
+
+                <a href="#" class="btn">Buy</a> <p class="price">Price</p>
+
+
+
+        </li>
+        <li class="product-wrapper">
+            <a href="" class="product"></a>
+
+
+                <div class="product-photo">
+                    <img src="{% static 'img/pic1.jpg'%}" alt="Oleg">
+                </div>
+
+
+                <div class="product__text">
+                    <p class="product__text__title">How Digital Workers Put AI to Work</p>
+                    <p class="product__text__description">Read how WorkFusion's Digital Workers can provide efficient path for positive business outcomes, with better customer / employee experience and compliance.</p>
+                    <p class="category-list__price">February 2, 2022 6 min read</p>
+                </div>
+
+                <a href="#" class="btn">Buy</a> <p class="price">Price</p>
+
+
+
+
+        </li>
+        <li class="product-wrapper">
+            <a href="" class="product"></a>
+
+
+                <div class="product-photo">
+                    <img src="{% static 'img/pic1.jpg'%}" alt="Oleg">
+                </div>
+
+
+                <div class="product__text">
+                    <p class="product__text__title">How Digital Workers Put AI to Work</p>
+                    <p class="product__text__description">Read how WorkFusion's Digital Workers can provide efficient path for positive business outcomes, with better customer / employee experience and compliance.</p>
+                    <p class="category-list__price">February 2, 2022 6 min read</p>
+                </div>
+
+                <a href="#" class="btn">Buy</a> <p class="price">Price</p>
+
+
+
+        </li>
+        <li class="product-wrapper">
+            <a href="" class="product"></a>
+
+
+                <div class="product-photo">
+                    <img src="{% static 'img/pic1.jpg'%}" alt="Oleg">
+                </div>
+
+
+                <div class="product__text">
+                    <p class="product__text__title">How Digital Workers Put AI to Work</p>
+                    <p class="product__text__description">Read how WorkFusion's Digital Workers can provide efficient path for positive business outcomes, with better customer / employee experience and compliance.</p>
+                    <p class="category-list__price">February 2, 2022 6 min read</p>
+
+                </div>
+
+
+
+                <a href="#" class="btn">Buy</a> <p class="price">Price</p>
+
+
+
+        </li>
+    </ul>
+</div>
+
+
+</body>
+</html>

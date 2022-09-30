@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color:rgb(0, 0, 0);
+    }
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}    
+
+h1,h2,h3,h4,h5,h6 {
+    margin:0;
+}
+
+/* Container */
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Intro */
+
+.intro {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+   
+    background: 
+    url("C:/QA/bsuir/apps/store/home/static/img/store-g894334ca7_1920.jpg")
+    center
+    no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover; 
+}
+
+ 
+.intro__inner {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    
+
+}
+
+
+.intro__title {
+    font-size: 300px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    line-height: 1;
+    color: #ffffff;
+}
+
+
+
+/* Header */
+
+
+.header {
+    width: 100%;
+    padding-top: 30px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.header__logo {
+    font-size: 30px;
+    font-weight: 700;
+    color:rgb(255, 255, 255);
+
+} 
+
+
+/* Navigation */
+
+.nav {
+    font-size: 15px;
+    text-transform: uppercase;
+
+}
+
+
+.nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px;
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    transition: color .1s linear;
+    position: relative;
+}
+
+.nav__link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    
+    opacity: 0;
+    background:#00c8c8;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    
+}
+
+.nav__link:hover {
+    color: #00c8c8;
+}
+
+.nav__link:hover:after {
+    display: block;
+    opacity: 1;
+
+    transition: opacity .1s linear;
+}
+
+
+/* Button */
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 8px 30px;
+
+    border: 3px solid #ffffff;
+
+    color:#ffffff;
+    text-transform: uppercase;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+    text-align: left;
+    transition: background .1s linear, color .1s linear; 
+}
+
+
+.btn:hover {
+    color: #00c8c8;
+    background: #ffffff;
+
+}
+
+
+
+
+@font-face {
+    font-family: "Montserrat"; 
+    src: url("C:/QA/bsuir/apps/store/home/static/css/Montserrat-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+

@@ -1,0 +1,99 @@
+
+/* Body 
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Container 
+
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+*/
+
+.product-wrapper {
+	display: block;
+	width: 100%;
+	float: left;
+	transition: width .2s;
+	border: 1px solid #b5e9a7;
+	border-radius: 3px;
+	position: relative;
+	background: #fff;
+	margin: 0 20px 20px 0;
+	
+	color: #474747;
+	z-index: 0;
+	height: auto;
+}
+
+
+
+@media only screen and (min-width: 450px) {
+	.product-wrapper {
+		width: 50%;
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.product-wrapper {
+		width: 33.333%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	.product-wrapper {
+		width: 25%;
+	}
+}
+
+
+
+
+.products {
+	list-style: none;
+	margin: 0 -20px 0 0;
+	padding: 0;
+    
+}
+
+
+.product-photo {
+	position: relative;
+	padding-bottom: 50%;
+	overflow: hidden;
+    
+}
+
+.product-photo img {
+    
+    background-color: violet;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	max-width: 100%;
+	max-height: 100%;
+	transition: transform .4s ease-out;
+}
+
+.product__text {
+    padding: 5px;
+}
+
+
+
+@font-face {
+    font-family: "Montserrat"; 
+    src: url("C:/QA/bsuir/apps/store/home/static/css/Montserrat-Medium.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}    

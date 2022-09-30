@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style_home.css'%}">
+
+    <title>webstore</title>
+        <style>
+
+
+
+        </style>
+</head>
+<body>
+
+<!--                                NAVIGATION                                        -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div href="{% url 'home' %}"  class="header__logo">webstore</div>
+
+                <nav class="nav">
+                    <a class ="nav__link" href="">Information</a>
+                    <a class ="nav__link" href="#">About us</a>
+                    <a class ="nav__link" href="#">Service</a>
+                    <a class ="nav__link" href="#">Support</a>
+                    <a class ="nav__link" href="/catalog">Catalog</a>
+                </nav>
+
+            </div>
+        </div>
+
+<!--                                HEADER                                        -->
+
+    </header>
+    <div class="intro" style="background-image: url({% static 'img/store-g894334ca7_1920.jpg' %})">
+
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">REGISTRATION</h1>
+                <a href="{% url 'register' %}" class="btn intro__title " style="align:center">REGISTER</a>
+                <a href="{% url 'login' %}" class="btn intro__title " style="align:center">LOGIN</a>
+            </div>
+        </div>
+    </div>
+
+<!--                                REGISTRATION                                        -->
+<div class="container">
+    {% if messages %}
+        {% for messages in messages %}
+
+            {% if message.tags == 'error' %}
+                <div class="alert alert-error" role="alert">
+                    {{ message }}
+                </div>
+            {% else %}
+                <div class="alert alert-{{ message.tags }}" role="alert">
+                    Incorrect data
+                </div>
+            {% endif %}
+
+
+
+
+        {% endfor %}
+    {% endif  %}
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="btn">Зарегестрировать</button>
+
+<!--
+        <div class="form_group">
+            <label for="{{ form.title.id_for_label}}">Название:</label>
+                {{ form.title }}
+                <div class="invalid_feedback">
+                    {{ form.title.errors }}
+                </div>
+        </div>
+-->
+    </form>
+
+
+
+</div>
+
+
+
+</body>
+</html>
